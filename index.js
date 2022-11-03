@@ -10,7 +10,8 @@ app.get("/json", (req, res) => {
 });
 
 
+const port = process.env.PORT || 3000
 
-app.listen(3000, ()=>{
-    console.log("connected to backend");
+app.listen(port, ()=>{
+    console.log(`connected to backend, ${port}`);
 });
